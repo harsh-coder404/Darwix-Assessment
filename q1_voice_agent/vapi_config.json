@@ -1,0 +1,50 @@
+{
+    "name": "HealthCare Plus Lead Qualification Agent",
+    "voice": {
+        "provider": "11labs",
+        "voiceId": "pNInz6obbfIdV2Z2dDfc",
+        "stability": 0.5,
+        "similarityBoost": 0.75
+    },
+    "model": {
+        "provider": "openai",
+        "model": "gpt-4o",
+        "messages": [
+            {
+                "role": "system",
+                "content": "INSERT_SYSTEM_PROMPT_HERE"
+            }
+        ],
+        "tools": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "query_knowledge_base",
+                    "description": "Queries the HealthCare Plus official policy knowledge base. Use this for ANY question regarding premiums, deductibles, coverage rules, network, or policy specifics.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "query": {
+                                "type": "string",
+                                "description": "The user's question, clearly articulated for semantic search."
+                            }
+                        },
+                        "required": [
+                            "query"
+                        ]
+                    }
+                },
+                "server": {
+                    "url": "REPLACE_WITH_YOUR_NGROK_OR_PUBLIC_URL/vapi/webhook"
+                }
+            }
+        ]
+    },
+    "recordingEnabled": true,
+    "firstMessage": "Hi, this is Alex calling from HealthCare Plus. I'm following up on your recent inquiry about our health insurance plans. Are you looking for coverage for just yourself, or for your family?",
+    "endCallPhrases": [
+        "goodbye",
+        "talk to you later",
+        "hang up"
+    ]
+}
