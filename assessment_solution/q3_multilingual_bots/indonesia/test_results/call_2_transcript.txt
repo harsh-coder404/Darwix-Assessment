@@ -1,0 +1,7 @@
+Agent: Selamat siang, apakah benar ini dengan Ibu Siti? Saya Budi dari Nusantara MultiFinance, mohon maaf mengganggu waktunya sebentar ya Ibu.
+Customer: Nggih Mas, leres. Pripon?
+Agent: Oh, nggih Ibu. Begini, saya lihat di sistem cicilan motor Ibu bulan ini sudah lewat jatuh temponya ya, tanggal 5 kemarin. Belum ada dana masuk. Apakah ada kendala, Bu?
+Customer: Aduh Mas sori, kulo lali durung transfer. Dompet saya ketinggalan di rumah mertua kemarin. Nanti besok pagi-pagi saya bayar deh.
+Agent: Tidak apa-apa Ibu Siti. Saya ngerti kok. Kalau begitu, saya bantu buatkan catatan 'janji bayar' untuk besok pagi ya, supaya Ibu tidak dikira sengaja menunda dan tidak kena denda keterlambatan tambahan.
+Customer: Wah, matur nuwun lho Mas Budi. Besok beneran saya tf jam 9 pagi ya Mas.
+Agent: Siap Ibu. Sama-sama, terima kasih kembali. Lancar selalu rejekinya ya Bu Siti, selamat beraktivitas kembali.

@@ -1,0 +1,25 @@
+{
+    "name": "Mika - Bancassurance PH",
+    "voice": {
+        "provider": "11labs",
+        "voiceId": "EXAVITQu4vr4xnSDxMaL",
+        "stability": 0.4,
+        "similarityBoost": 0.8
+    },
+    "transcriber": {
+        "provider": "deepgram",
+        "model": "nova-2",
+        "language": "tl"
+    },
+    "model": {
+        "provider": "openai",
+        "model": "gpt-4o",
+        "messages": [
+            {
+                "role": "system",
+                "content": "INSERT_SYSTEM_PROMPT_HERE"
+            }
+        ]
+    },
+    "firstMessage": "Hello po, magandang araw! Ako po si Mika from Metro Life Bancassurance. Tumawag po ako for a quick reminder regarding your life insurance policy. May two minutes po ba kayo?"
+}

@@ -1,0 +1,8 @@
+Agent: Selamat siang, apakah benar ini dengan Bapak Andi? Saya Budi dari Nusantara MultiFinance, mohon maaf mengganggu waktunya sebentar ya pak.
+Customer: Iya, siang. Ada apa ya Mas Budi?
+Agent: Begini Pak Andi, saya cuma mau bantu mengingatkan kalau cicilan motor Bapak yang ke-12 akan jatuh tempo tanggal 20 bulan ini. Totalnya sekitar enam ratus ribu rupiah. Kira-kira mau melakukan pembayaran lewat transfer bank atau lewat Indomaret, Pak?
+Customer: Oh iya, saya inget. Bayar lewat mobile banking BCA aja bisa kan ya? Pakai virtual account?
+Agent: Bisa banget Pak Andi. Untuk nomor Virtual Account BCA-nya masih sama dengan bulan lalu ya Pak.
+Customer: Oke Mas, ntar sore saya transfer langsung pas jam istirahat.
+Agent: Baik Bapak, terima kasih banyak kerjasamanya. Hati-hati di jalan kalau bawa motornya ya Pak. Selamat beraktivitas kembali!
+Customer: Siap, makasih mas.

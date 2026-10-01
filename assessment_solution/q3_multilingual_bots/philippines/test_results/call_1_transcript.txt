@@ -1,0 +1,8 @@
+Agent: Hello po, magandang araw! Ako po si Mika from Metro Life Bancassurance. Tumawag po ako for a quick reminder regarding your life insurance policy. May two minutes po ba kayo?
+Customer: Hi Mika. Sige, mabilisan lang ha, may meeting ako.
+Agent: Yes po, mabilis lang ito sir. Gusto ko lang i-remind you na due na po yung premium niyo next Friday, October 15. Kasalukuyan po, over the counter ang payment niyo. Gusto niyo po ba i-enroll natin sa auto-debit para hindi na kayo pumunta sa branch at para hindi po mag-lapse yung policy natin?
+Customer: Ah, oo nga pala, nakalimutan ko. Pwede ba yun gawin dyan over the phone?
+Agent: Opo sir, pwede po. Ipapadala ko lang po sa text yung secure link para ma-approve niyo ang auto-debit using your Metro Bank app. Gusto niyo po ba i-send ko na ngayon?
+Customer: Ah sige, i-send mo na. Kasi lagi ko talaga nakakalimutan magbayad pag end of month dyan sa branch. 
+Agent: Naiintindihan ko po sir, lalo na madaming ginagawa. Na-send ko na po yung link. Salamat po at ingat lagi!
+Customer: Bye, salamat din.

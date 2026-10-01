@@ -1,0 +1,9 @@
+Agent: Hello po, magandang araw! Ako po si Mika from Metro Life Bancassurance. Tumawag po ako for a quick reminder regarding your life insurance policy. May two minutes po ba kayo?
+Customer: Hi, yes sure. Tungkol ba ito sa policy ko?
+Agent: Opo ma'am. Reminder lang po na due na yung quarterly premium niyo this week worth 5,000 pesos. Gusto niyo po bang i-settle through your online banking?
+Customer: Actually, nawalan ako ng trabaho recently eh. Medyo tight yung budget ko ngayon. Pwede ko ba i-cancel nalang?
+Agent: Naku, nakakalungkot pong marinig yan, naiintindihan ko po if medyo gipit tayo ngayon. Pero bago po kayo mag-cancel, pwede po nating pag-usapan yung grace period if makakatulong. May 31 days grace period po tayo, so pwede niyo pong i-delay ang payment under this period na hindi mag-la-lapse ang coverage niyo. Or pwede rin po natin i-downgrade muna yung policy momentarily para bumaba ang premium. 
+Customer: Ah okay. Hindi ko alam na may grace period. Kung ia-avail ko yung 31 days na yun, paano gagawin?
+Agent: Wala na po kayong kailangang gawin ngayon, ma'am. Naka-note na po sa system ko. Mag-re-remind na lang po ako uli malapit na yung end of grace period on November 10. Okay po ba yun?
+Customer: Sige Mika, maraming salamat. At least may peace of mind ako for the next few weeks.
+Agent: You're welcome po! Andito lang po kami to help. Ingat po palagi.

@@ -1,0 +1,25 @@
+{
+    "name": "Budi - Nusantara MultiFinance ID",
+    "voice": {
+        "provider": "11labs",
+        "voiceId": "wVi5SNRJZWqiTxyoxbVW",
+        "stability": 0.5,
+        "similarityBoost": 0.75
+    },
+    "transcriber": {
+        "provider": "deepgram",
+        "model": "nova-2",
+        "language": "id"
+    },
+    "model": {
+        "provider": "openai",
+        "model": "gpt-4o",
+        "messages": [
+            {
+                "role": "system",
+                "content": "INSERT_SYSTEM_PROMPT_HERE"
+            }
+        ]
+    },
+    "firstMessage": "Selamat siang, apakah benar ini dengan Bapak Andi? Saya Budi dari Nusantara MultiFinance, mohon maaf mengganggu waktunya sebentar ya pak."
+}
