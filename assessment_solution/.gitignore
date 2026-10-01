@@ -4,7 +4,9 @@
 # ── Python / Virtual Env (not needed with Docker, but just in case) ───────────
 .venv/
 __pycache__/
+**/__pycache__/
 *.py[cod]
+*.pyc
 *.pyo
 *.pyd
 
