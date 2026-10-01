@@ -1,0 +1,13 @@
+Agent: Hi, this is Alex calling from HealthCare Plus. I'm following up on your recent inquiry about our health insurance plans. Are you looking for coverage for just yourself, or for your family?
+Customer: Hi Alex. I'm just looking for myself right now.
+Agent: Got it. I can definitely help you with an individual plan. What specific questions do you have about our coverage?
+Customer: Yeah, I wanted to know what the individual plan offers.
+[TOOL CALL: query_knowledge_base({"query": "What does the HealthCare Plus individual plan offer?"})]
+Agent: Our individual plan provides comprehensive coverage, including preventive care, emergency services, hospitalization, and mental health support. It comes with a $1,500 annual deductible and an out-of-pocket maximum of $6,000. Does that sound like what you're looking for?
+Customer: Yes, but what happens if I need to see a doctor who isn't in your network?
+[TOOL CALL: query_knowledge_base({"query": "What happens if I use an out-of-network provider?"})]
+Agent: Under our standard plan, using an out-of-network provider means you'll have higher out-of-pocket costs, and those costs won't count toward your in-network deductible. Emergency services, however, are always covered at the in-network rate regardless of the hospital.
+Customer: Okay, that makes sense. I think I'm ready to move forward.
+Agent: Great! I can schedule a quick callback with one of our licensed advisors to finalize your eligibility and get you enrolled. Would tomorrow morning work for you?
+Customer: Yes, 10 AM is good.
+Agent: Perfect. I've noted that down for an enrollment advisor to call you tomorrow at 10 AM. Thanks for your time today!

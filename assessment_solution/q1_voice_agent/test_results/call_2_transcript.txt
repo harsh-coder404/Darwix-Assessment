@@ -1,0 +1,11 @@
+Agent: Hi, this is Alex calling from HealthCare Plus. I'm following up on your recent inquiry about our health insurance plans. Are you looking for coverage for just yourself, or for your family?
+Customer: Uh, for my family. But honestly, I looked at some of the online quotes and they were really expensive.
+Agent: I completely understand. Healthcare costs are a big concern for a lot of families right now. What specific budget or pricing were you hoping for?
+Customer: I don't know, maybe under $500? I also have asthma, am I even eligible if I have a pre-existing condition?
+[TOOL CALL: query_knowledge_base({"query": "Am I eligible if I have a pre-existing condition?"})]
+Agent: Let me reassure you on that first point—yes, you are absolutely eligible. HealthCare Plus covers pre-existing conditions without any waiting periods or exclusions. 
+Customer: Okay, that's a relief. But what about the price? The premium is too high. Can I get a subsidy?
+[TOOL CALL: query_knowledge_base({"query": "The premium is too expensive, can I get a subsidy?"})]
+Agent: Depending on your household income, you might qualify for Premium Tax Credits under the ACA, which can significantly lower your monthly payment. For a family plan, our base rate is $950 before subsidies, but with credits, many families pay much less. Would you like me to transfer you to an advisor to calculate your exact subsidy?
+Customer: Yes, please do that.
+Agent: Sure thing. Please hold the line while I securely transfer your details to our qualifying team.

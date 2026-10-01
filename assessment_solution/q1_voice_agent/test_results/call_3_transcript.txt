@@ -1,0 +1,11 @@
+Agent: Hi, this is Alex calling from HealthCare Plus. I'm following up on your recent inquiry about our health insurance plans. Are you looking for coverage for just yourself, or for your family?
+Customer: Just for me. Hey, quick question, do you know if my mechanic covers oil changes under my car insurance policy?
+Agent: That's a great question, but I actually specialize in health insurance for HealthCare Plus. Did you have any questions about health coverage, deductibles, or finding a doctor?
+Customer: Oh right, sorry. Well, how long is the grace period if I miss my premium payment? Let's say I lose my job.
+[TOOL CALL: query_knowledge_base({"query": "How long is the grace period if I miss my premium payment?"})]
+Agent: If you miss a premium payment, we do offer a 30-day grace period to catch up without your coverage being canceled. Have you recently had a change in employment?
+Customer: Yes, I was laid off. Is there a specific form I need to fill out for COBRA continuation? 
+[TOOL CALL: query_knowledge_base({"query": "Is there a specific form I need to fill out for COBRA continuation?"})]
+Agent: I don't have that specific information in front of me regarding the exact COBRA forms. However, because you've had a qualifying life event like a job loss, I'd highly recommend speaking directly with one of our enrollment specialists who handles transition coverage. Shall I transfer you to them now?
+Customer: Yeah, that would be helpful.
+Agent: Excellent. Stay on the line, and I'll connect you right away.
