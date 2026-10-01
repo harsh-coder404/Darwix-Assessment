@@ -1,0 +1,18 @@
+# ─── Q1 Voice Agent Webhook Server ───────────────────────────────────────────
+FROM python:3.12-slim AS webhook_base
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gcc \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY requirements.webhook.txt .
+RUN pip install --no-cache-dir -r requirements.webhook.txt
+
+COPY config.py .
+COPY q1_voice_agent/ ./q1_voice_agent/
+
+EXPOSE 8002
+
+CMD ["uvicorn", "q1_voice_agent.kb_webhook:app", "--host", "0.0.0.0", "--port", "8002"]

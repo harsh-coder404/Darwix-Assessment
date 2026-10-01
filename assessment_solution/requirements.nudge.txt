@@ -1,0 +1,10 @@
+# Q4 Real-Time Nudge Pipeline + Dashboard
+python-dotenv==1.0.1
+pydantic==2.7.4
+openai==1.35.0
+deepgram-sdk==3.2.0
+websockets==12.0
+streamlit==1.35.0
+fastapi==0.111.1
+uvicorn==0.30.1
+httpx==0.27.0

@@ -1,0 +1,20 @@
+# ─── Q4 Real-Time Nudge Dashboard ────────────────────────────────────────────
+FROM python:3.12-slim AS nudge_base
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gcc \
+    libsndfile1 \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY requirements.nudge.txt .
+RUN pip install --no-cache-dir -r requirements.nudge.txt
+
+COPY config.py .
+COPY q4_realtime_nudges/ ./q4_realtime_nudges/
+
+EXPOSE 8501
+
+CMD ["streamlit", "run", "q4_realtime_nudges/dashboard.py", \
+    "--server.port=8501", "--server.address=0.0.0.0", "--server.headless=true"]

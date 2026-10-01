@@ -1,0 +1,84 @@
+# ─── Shared environment ───────────────────────────────────────────────────────
+x-common-env: &common-env
+  OPENAI_API_KEY: ${OPENAI_API_KEY}
+  VAPI_PRIVATE_API_KEY: ${VAPI_PRIVATE_API_KEY}
+  VAPI_PUBLIC_KEY: ${VAPI_PUBLIC_KEY}
+  DEEPGRAM_API_KEY: ${DEEPGRAM_API_KEY}
+  ELEVENLABS_API_KEY: ${ELEVENLABS_API_KEY}
+  KB_RETRIEVAL_URL: http://kb_api:8001
+  KB_WEBHOOK_URL: http://webhook:8002
+
+services:
+
+  # ── Q2: Knowledge Base Retrieval API ────────────────────────────────────────
+  kb_api:
+    build:
+      context: .
+      dockerfile: Dockerfile.kb
+    container_name: kb_retrieval_api
+    ports:
+      - "8001:8001"
+    environment:
+      <<: *common-env
+    volumes:
+      # Persist ChromaDB data across container restarts
+      - chroma_data:/app/q2_knowledge_base/chroma_db
+      # Mount processed data so ingestion output is visible
+      - ./q2_knowledge_base/data:/app/q2_knowledge_base/data
+    networks:
+      - ai_net
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8001/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # ── Q1: Voice Agent Webhook ──────────────────────────────────────────────────
+  webhook:
+    build:
+      context: .
+      dockerfile: Dockerfile.webhook
+    container_name: q1_webhook
+    ports:
+      - "8002:8002"
+    environment:
+      <<: *common-env
+    depends_on:
+      - kb_api
+    networks:
+      - ai_net
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8002/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # ── Q4: Real-Time Nudge Dashboard ───────────────────────────────────────────
+  nudge_dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile.nudge
+    container_name: q4_nudge_dashboard
+    ports:
+      - "8501:8501" # Streamlit UI
+      - "8765:8765" # WebSocket for live nudges
+    environment:
+      <<: *common-env
+    volumes:
+      # Mount audio samples for call simulation
+      - ./q4_realtime_nudges/audio_samples:/app/q4_realtime_nudges/audio_samples
+    networks:
+      - ai_net
+    restart: unless-stopped
+
+# ─── Data volumes ─────────────────────────────────────────────────────────────
+volumes:
+  chroma_data:
+    driver: local
+
+# ─── Internal network ─────────────────────────────────────────────────────────
+networks:
+  ai_net:
+    driver: bridge

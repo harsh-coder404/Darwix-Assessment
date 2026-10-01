@@ -1,0 +1,31 @@
+# ── Credentials (NEVER commit) ────────────────────────────────────────────────
+.env
+
+# ── Python / Virtual Env (not needed with Docker, but just in case) ───────────
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# ── ChromaDB persistent data ──────────────────────────────────────────────────
+q2_knowledge_base/chroma_db/
+
+# ── Raw scraped data (large, regenerable) ─────────────────────────────────────
+q2_knowledge_base/data/raw/
+
+# ── Audio recordings (submit separately or link via Google Drive) ─────────────
+*.wav
+*.mp3
+*.ogg
+
+# ── OS files ──────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+
+# ── Docker build cache (git won't track these anyway) ────────────────────────
+*.log
